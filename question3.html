@@ -1,30 +1,21 @@
+<!DOCTYPE html>
 <html>
-    <script type="text/javascript">
-        function abc(num){
-            var i=1;
-            var j;
-            var k; //variable that contains count
-            var t=0;
-            while(i<=num){
-                k=0;
-                if(num%i==0){//finds out the factors of given number
-                    j=1;
-                    while(j<=i){ // to check if the factor of num is prime
-                        if(i%j==0)
-                            k++;
-                        j++;
-                    } 
-                    if(k==2)
-                    {// to find the largest prime factor
-                        if(t<=i){
-                            t=i;
-                        } 
-                    }
-                }
-                i++;
-            }
-            document.write(t);//prints the largest prime factor of the number 600851475143
-        }
-        abc(600851475143);
-    </script>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="content" style="margin-left: 150px;margin-right: 150px;">
+            <h2 style="padding-top: 40px;">Largest prime factor</h2>
+            <div class="info" style="cursor:help;width:200px;margin-bottom:10px;">
+                <h3>Problem 3</h3>
+            </div>
+            <div style="border:2px black dotted">
+                <p style="padding-left: 10px;">The prime factors of 13195 are 5, 7, 13 and 29.</p>
+                <p style="padding-left: 10px;">What is the largest prime factor of the number 600851475143 ?</p>
+            </div>
+            <h3 style="padding-top: 40px;">Solution:</h3>
+            <script src="js/question3.js"></script>
+        </div>
+    </body>
 </html>

@@ -1,27 +1,21 @@
+<!DOCTYPE html>
 <html>
-    <script type="text/javascript">
-        var j;
-        var i;
-        var flag=0;
-        var sum=0;
-        function abc(){
-            for(j=2;j<2000000;j++)
-            {  flag=0;
-                for (i=2;i<=j/2;i++)
-                {
-                    if(j%i==0)// to check whether a number is prime.
-                    {
-                        flag=1;
-                        break;
-                    }
-                }
-                if(flag==0)// condition true only for prime numbers
-                {
-                    sum=sum+j;//add prime numbers
-                }
-            }
-            return sum;
-        }
-        console.log(abc());
-    </script>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="content" style="margin-left: 150px;margin-right: 150px;">
+            <h2 style="padding-top: 40px;">Summation of primes</h2>
+            <div class="info" style="cursor:help;width:200px;margin-bottom:10px;">
+                <h3>Problem 10</h3>
+            </div>
+            <div style="border:2px black dotted">
+                <p style="padding-left: 10px;">The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.</p>
+                <p style="padding-left: 10px;">Find the sum of all the primes below two million.</p>
+            </div>
+            <h3 style="padding-top: 40px;">Solution:</h3>
+            <script src="js/question10.js"></script>
+        </div>
+    </body>
 </html>

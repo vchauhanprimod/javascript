@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript">
-           
-            function abc(){
-                var sum=0;
-                for(var i=1;i<1000;i++) 
-                {
-                    if((i%5==0)||(i%3==0)) //check if the number is a multiple of either 3 or 5
-                    {
-                        sum=sum+i;
-                    }
-   
-                }
-                return sum; //returns the sum of all the multiples of 3 or 5 below 1000.
-            }
-        </script>       
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <Script>
-            document.write(abc()); //prints the value returned by function abc
-        </script>
+        <div id="content" style="margin-left: 150px;margin-right: 150px;">
+            <h2 style="padding-top: 40px;">Multiples of 3 and 5</h2>
+            <div class="info" style="cursor:help;width:200px;margin-bottom:10px;">
+                <h3>Problem 1</h3>
+            </div>
+            <div style="border:2px black dotted">
+                <p style="padding-left: 10px;">If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+                <p style="padding-left: 10px;">Find the sum of all the multiples of 3 or 5 below 1000.</p>
+            </div>
+            <h3 style="padding-top: 40px;">Solution:</h3>
+            <script src="js/question1.js"></script>
+        </div>
     </body>
 </html>
